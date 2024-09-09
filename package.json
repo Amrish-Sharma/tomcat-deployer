@@ -1,0 +1,45 @@
+{
+  "name": "tomcat-deployer",
+  "displayName": "tomcat-deployer",
+  "description": "The Tomcat Manager for VS Code extension streamlines the process of managing Apache Tomcat servers directly within your development environment. This extension automatically detects Tomcat installations on Windows or Linux systems, providing an intuitive interface to configure, start, stop, and monitor the server.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "tomcat-deployer.helloWorld",
+        "title": "Hello World"
+      },
+      {
+        "command": "tomcat-deployer.deploy",
+        "title": "Deploy WAR to Tomcat"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run build",
+    "build": "node ./esbuild.js",
+    "watch": "node ./esbuild.js --watch"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.93.0",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.3.0",
+    "@typescript-eslint/parser": "^8.3.0",
+    "eslint": "^9.9.1",
+    "esbuild": "^0.23.1",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.5.4",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
+
