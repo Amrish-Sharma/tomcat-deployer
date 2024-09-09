@@ -14,12 +14,20 @@
   "contributes": {
     "commands": [
       {
-        "command": "tomcat-deployer.helloWorld",
-        "title": "Hello World"
+        "command": "tomcat-deployer.showMenu",
+        "title": "TD: Show Menu"
+      },
+      {
+        "command": "tomcat-deployer.verifyJava",
+        "title": "TD: Verify Java Installation"
+      },
+      {
+        "command": "tomcat-deployer.verifyTomcat",
+        "title": "TD: Verify Tomcat Installation"
       },
       {
         "command": "tomcat-deployer.deploy",
-        "title": "Deploy WAR to Tomcat"
+        "title": "TD: Deploy WAR"
       }
     ]
   },
@@ -40,6 +48,10 @@
     "typescript": "^5.5.4",
     "@vscode/test-cli": "^0.0.10",
     "@vscode/test-electron": "^2.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Amrish-Sharma/tomcat-deployer.git"
   }
 }
 
